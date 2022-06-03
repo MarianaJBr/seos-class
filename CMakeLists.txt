@@ -1,0 +1,78 @@
+cmake_minimum_required(VERSION 3.9)
+project(class_vainilla)
+
+set(CMAKE_CXX_STANDARD 11)
+
+include_directories(cpp)
+include_directories(hyrec)
+include_directories(include)
+include_directories(tools)
+include_directories(/Users/mariannejbr/codes/gsl-2.4/gslbuilds/include)
+link_directories(/Users/mariannejbr/codes/gsl-2.4/gslbuilds/lib)
+link_libraries(m)
+link_libraries(gsl)
+
+add_executable(class_vainilla
+        cpp/ClassEngine.cc
+        cpp/ClassEngine.hh
+        cpp/Engine.cc
+        cpp/Engine.hh
+        hyrec/helium.c
+        hyrec/helium.h
+        hyrec/history.c
+        hyrec/history.h
+        hyrec/hydrogen.c
+        hyrec/hydrogen.h
+#        hyrec/hyrec.c
+        hyrec/hyrec.h
+        hyrec/hyrectools.c
+        hyrec/hyrectools.h
+        include/arrays.h
+        include/background.h
+        include/class.h
+        include/common.h
+        include/dei_rkck.h
+        include/evolver_ndf15.h
+        include/evolver_rkck.h
+        include/growTable.h
+        include/hermite3_interpolation_csource.h
+        include/hermite4_interpolation_csource.h
+        include/hermite6_interpolation_csource.h
+        include/hyperspherical.h
+        include/input.h
+        include/lensing.h
+        include/nonlinear.h
+        include/output.h
+        include/parser.h
+        include/perturbations.h
+        include/primordial.h
+        include/quadrature.h
+        include/sparse.h
+        include/spectra.h
+        include/svnversion.h
+        include/thermodynamics.h
+        include/transfer.h
+        main/class.c
+        source/background.c
+        source/input.c
+        source/lensing.c
+        source/nonlinear.c
+        source/output.c
+        source/perturbations.c
+        source/primordial.c
+        source/spectra.c
+        source/thermodynamics.c
+        source/transfer.c
+        tools/arrays.c
+        tools/common.c
+        tools/dei_rkck.c
+        tools/evolver_ndf15.c
+        tools/evolver_rkck.c
+        tools/growTable.c
+        tools/hermite3_interpolation_csource.h
+        tools/hermite4_interpolation_csource.h
+        tools/hermite6_interpolation_csource.h
+        tools/hyperspherical.c
+        tools/parser.c
+        tools/quadrature.c
+        tools/sparse.c)
