@@ -108,6 +108,9 @@ Using the code
 You can use CLASS freely, provided that in your publications, you cite
 at least the paper `CLASS II: Approximation schemes <http://arxiv.org/abs/1104.2933>`. Feel free to cite more CLASS papers!
 
+This version of the code has been modified to include the model "Steep Equation of State". If you use this code, please also refer to the papers: `"Probing a Steep EoS for Dark Energy with latest observations" <https://arxiv.org/abs/1708.08529>`, but also feel free to check the publications `"Imprint of a Steep Equation of State in the growth of structure" <https://arxiv.org/abs/1906.09522>` and `"Non-linear Structure Formation for Dark Energy Models with a Steep Equation of State" <https://arxiv.org/abs/1911.02402>`.
+
+
 Support
 -------
 
